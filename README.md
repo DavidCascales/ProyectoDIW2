@@ -1,31 +1,16 @@
-## Resumen de Flujo de Trabajo
+# Guia
 
-1. Asegúrate de tener la última versión del código:
+## Trabajar con ramas
 
-```bash
-git pull origin main
-```
+1. Cada usuario tiene su propia rama, donde cada persona utilizara su propia rama para hacer sus tareas.
+2. Cada vez que una persona haga un push en la rama main, los demas participantes tendran que hacer un rebase.
+3. Recordad hacer el push en vuestra rama!
 
-2. Trabaja en tus cambios y haz commits locales:
+## Comandos utiles
 
-```bash
-git add .
-git commit -m "Tu mensaje de commit"
-```
-
-3. Antes de hacer un push, asegúrate de que tu rama esté actualizada:
-
-```bash
-git pull --rebase origin main
-```
-
-4. Finalmente, sube tus cambios al repositorio remoto:
-
-```bash
-git push origin feature
-```
-
-## Consejos:
-
-- Siempre asegúrate de estar en la rama correcta antes de realizar un push o rebase.
-- Si hay conflictos durante el rebase o el pull, resuélvelos manualmente y luego continúa con los pasos de la operación.
+- `git add .` // Comando para añadir archivos modificados al area Staging.
+- `git commit -m "mensage de la featured"` // Confirmar cambios y añadir mensaje a la modificación
+- `git push origin nombreRama` // Subir cambios de una rama
+- `git pull origin nombrerama` // Obtener cambios de una rama
+- `git rebase main` // Obtener los commits de la rama main a nuestra rama actual.
+  > Muy importante hacer rebase cuando un integrante añada una funcionalidad al main
