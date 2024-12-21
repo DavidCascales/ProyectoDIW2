@@ -50,12 +50,18 @@
       </div>
     </nav>
     <div class="card rounded-0 text-center border border-1 bg-body-secondary">
-      <img class="card-img object-fit-cover" src="./assets/hero-image.jpg" alt="Card image" style="max-height: 50vh; filter: brightness(40%)">
-      <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-white" style="padding: 2rem;">
-        <h3 class="display-3">Welcome to EcoPrint 3D</h3>
-        <p class="lead">
-          Join us in our mission to revolutionize manufacturing with green technology. 
+      <img class="card-img object-fit-cover" src="./assets/hero-image.jpg" alt="Card image"
+        style="max-height: 50vh; filter: brightness(40%)">
+      <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-white"
+        style="padding: 2rem;">
+        <h3 class="display-3 d-none d-sm-block">Welcome to EcoPrint 3D</h3>
+        <h3 class="display-6 d-sm-none d-block">EcoPrint 3D</h3>
+        <p class="lead d-none d-sm-block">
+          Join us in our mission to revolutionize manufacturing with green technology.
           We are committed to creating a sustainable future by repurposing waste into innovative products.
+        </p>
+        <p class="d-sm-none d-block">
+          Join us to revolutionize manufacturing with green technology.
         </p>
         <button class="btn btn-primary">About us</button>
       </div>
@@ -105,6 +111,17 @@
       </div>
     </div>
   </main>
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
   <footer>
     <div class="mt-5 bg-primary p-4">
       <div class="row">
