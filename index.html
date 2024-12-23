@@ -7,12 +7,6 @@
   <title>EcoPrint 3D</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <style>
-    .carousel-item img {
-      max-height: 50vh;
-      object-fit: cover;
-    }
-  </style>
 </head>
 
 <body>
@@ -126,13 +120,13 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./assets/carrousel1.jpg" class="d-block w-100" alt="3D printer creating an object">
+          <img src="./assets/carrousel1.jpg" class="d-block w-100 object-fit-cover" alt="3D printer creating an object">
         </div>
         <div class="carousel-item">
-          <img src="./assets/carrousel2.jpg" class="d-block w-100" alt="Close-up of a 3D printer in action">
+          <img src="./assets/carrousel2.jpg" class="d-block w-100 object-fit-cover" alt="Close-up of a 3D printer in action">
         </div>
         <div class="carousel-item">
-          <img src="./assets/carrousel3.jpg" class="d-block w-100" alt="Finished 3D printed object">
+          <img src="./assets/carrousel3.jpg" class="d-block w-100 object-fit-cover" alt="Finished 3D printed object">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carrouselPrincipal" data-bs-slide="prev">
@@ -152,7 +146,7 @@
     </div>
     <div class="container my-4">
       <p class="display-6">What materials we will use</p>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 d-flex justify-content-center g-4">
         <div class="col">
           <div class="card h-100">
             <img src="./assets/recycled_plastics.jpg" class="card-img-top"
@@ -177,11 +171,56 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="./assets/biomaterials.jpg" class="card-img-top" alt="Biomaterials like natural fibers or wood scraps">
+            <img src="./assets/biomaterials.jpg" class="card-img-top"
+              alt="Biomaterials like natural fibers or wood scraps">
             <div class="card-body">
               <h5 class="card-title">Biomaterials</h5>
               <p class="card-text">Natural fibers or wood scraps</p>
               <a href="#" class="btn btn-primary">More info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <p class="display-6">Our Vision, Mission, and Goals</p>
+      <div class="accordion" id="accordionStartup">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Mission
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionStartup">
+            <div class="accordion-body">
+              Transforming waste into sustainable opportunities through 3D printing.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Vision
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionStartup">
+            <div class="accordion-body">
+              A world where recycled materials become innovative and functional products.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Goal
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionStartup">
+            <div class="accordion-body">
+              Reducing environmental impact by creating high-quality recycled filaments.
             </div>
           </div>
         </div>
